@@ -3,7 +3,7 @@
 
   Parse and normalize the individual values of a css transform.
   Uses the same algorithm that Firefox uses to parse the transform string.
-  Only parses the 2D transforms attributes. This library is intentionally low-level
+  Only parses the 2D transform attributes. This library is intentionally low-level
   and should probably be used within another library.
 
   If you'd like to parse 3D transforms take a look at:
