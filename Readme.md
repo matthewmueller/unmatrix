@@ -2,7 +2,8 @@
 # unmatrix
 
   Parse and normalize the individual values of a css transform.
-  This only works with 2D transforms. This library is intentionally low-level
+  Uses the same algorithm that Firefox uses to parse the transform string.
+  Only parses the 2D transforms attributes. This library is intentionally low-level
   and should probably be used within another library.
 
   If you'd like to parse 3D transforms take a look at:
@@ -38,6 +39,11 @@ Parse the individual values of a CSS transform. Returns the following object:
   "scaleY": 2
 }
 ```
+
+## TODO
+
+- support for transform matrix parsing
+- tests would be nice
 
 ## License
 
