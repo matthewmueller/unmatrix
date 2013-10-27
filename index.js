@@ -25,8 +25,7 @@ exports.parse = parse;
 
 function unmatrix(el) {
   var prop = style(el);
-  var matrix = stom(prop);
-  return parse(matrix);
+  return parse(prop);
 }
 
 /**
@@ -36,12 +35,13 @@ function unmatrix(el) {
  *
  * - http://hg.mozilla.org/mozilla-central/file/7cb3e9795d04/layout/style/nsStyleAnimation.cpp
  *
- * @param {Array} m (matrix)
+ * @param {String} str
  * @return {Object}
- * @api private
+ * @api public
  */
 
-function parse(m) {
+function parse(str) {
+  var m = stom(str);
   var A = m[0];
   var B = m[1];
   var C = m[2];
