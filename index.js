@@ -8,7 +8,13 @@ var computed = require('computed-style');
  * Expose `unmatrix`
  */
 
-module.exports = unmatrix;
+exports = module.exports = unmatrix;
+
+/**
+ * Expose `parse`
+ */
+
+exports.parse = parse;
 
 /**
  * Unmatrix
