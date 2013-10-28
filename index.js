@@ -8,13 +8,7 @@ var computed = require('computed-style');
  * Expose `unmatrix`
  */
 
-exports = module.exports = unmatrix;
-
-/**
- * Expose `parse`
- */
-
-exports.parse = parse;
+module.exports = unmatrix;
 
 /**
  * Unmatrix
@@ -24,8 +18,9 @@ exports.parse = parse;
  */
 
 function unmatrix(el) {
-  var prop = style(el);
-  return parse(prop);
+  return 'string' != typeof el
+    ? parse(style(el))
+    : parse(el);
 }
 
 /**

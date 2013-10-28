@@ -30,7 +30,7 @@
     console.log(JSON.stringify(t, true, 2));
     box2.style.webkitTransform = toString(t);
 
-    t = unmatrix.parse('scale(2) translate(200px, 100px) rotate(60deg) skew(20deg)');
+    t = unmatrix('scale(2) translate(200px, 100px) rotate(60deg) skew(20deg)');
     console.log(JSON.stringify(t, true, 2));
 
     function toString(props) {
