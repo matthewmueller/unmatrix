@@ -23,12 +23,15 @@
   <h1>unmatrix component</h1>
   <div id="box"></div>
   <div id="box2"></div>
-  <script src="../build/build.js" type="text/javascript"></script>
+  <script src="build/build.js" type="text/javascript"></script>
   <script type="text/javascript">
     var unmatrix = require('unmatrix');
     var t = unmatrix(box);
     console.log(JSON.stringify(t, true, 2));
     box2.style.webkitTransform = toString(t);
+
+    t = unmatrix('scale(2) translate(200px, 100px) rotate(60deg) skew(20deg)');
+    console.log(JSON.stringify(t, true, 2));
 
     function toString(props) {
       var out = [];
