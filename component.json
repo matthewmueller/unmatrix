@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "jkroso/computed-style": "*"
+    "jkroso/computed-style": "0.1.0"
   },
   "development": {},
   "license": "MIT",
