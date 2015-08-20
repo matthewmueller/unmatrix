@@ -36,6 +36,17 @@ function unmatrix(el) {
  */
 
 function parse(str) {
+
+  if(str === 'none') {
+    return {
+      translateX: 0,
+      translateY: 0,
+      rotate: 0,
+      skew: 0,
+      scaleX: 1,
+      scaleY: 1
+    };
+  }
   var m = stom(str);
   var A = m[0];
   var B = m[1];
